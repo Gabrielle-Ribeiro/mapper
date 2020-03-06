@@ -1,3 +1,6 @@
 [submodule "photogrammetry_datasets_links"]
 	path = photogrammetry_datasets_links
 	url = https://github.com/natowi/photogrammetry_datasets
+[submodule "meshroom"]
+	path = meshroom
+	url = https://github.com/alicevision/meshroom
