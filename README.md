@@ -30,6 +30,8 @@ python bin/meshroom_photogrammetry --input test_3d_meshroom/input_images --outpu
 ## Open meshroom GUI app
 meshroom
 ## Follow the following tutorial:
-[https://meshroom-manual.readthedocs.io/en/latest/gui/live-reconstruction/live-reconstruction.html](Tutorial link)
+```
+##### [Live Reconstruction Tutorial with Meshroom](https://meshroom-manual.readthedocs.io/en/latest/gui/live-reconstruction/live-reconstruction.html)
+```
 ## Add the dataset images to the input folder one by one
 ```
