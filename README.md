@@ -16,15 +16,12 @@ docker pull alicevision/meshroom
 cd mapper
 
 # Run the container
-docker run --rm -it -v ${PWD}:/current_dir -w /current_dir --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" alicevision/meshroom
-## Parameters explanation
+docker run -v ${PWD}:/current_dir -w /current_dir --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --rm -it --runtime=nvidia alicevision/meshroom
+## Explanation of the unusual parameters
 ### Use your current folder as a volume
 -v ${PWD}:/current_dir -w /current_dir
 ### Make the docker container able to display GUI apps
 --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw"
-
-# Launch a 3D reconstruction
-python bin/meshroom_photogrammetry --input test_3d_meshroom/input_images --output test_3d_meshroom/output
 
 # Launch a live 3D reconstruction
 ## Open meshroom GUI app
